@@ -15,10 +15,10 @@ export default function App() {
   <button onClick={()=> setCount(2)}>Update Counter1  </button>
   <br />
   <button onClick={()=> setCount(count+1)}>Update Counter2  </button>
-<br />
+   <br />
   <button onClick={()=> setMorning(!isMorning)}> Update Day </button>
-<br />
-<h4>Slow and steady wins the race</h4>
+  <br />
+  <h3>Slow and steady wins the race</h3>
 </div>
 );
 }
