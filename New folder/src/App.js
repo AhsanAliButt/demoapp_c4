@@ -10,13 +10,15 @@ export default function App() {
   <h1>Day time = {isMorning ? 'Morning' : 'Night'}</h1>
   <Message counter={count}/>
   <br />
-  <button onClick={()=>alert('button pressed')}>Update Counter</button>
+  <button onClick={()=>alert('Press Update Counter 2')}>Update Counter</button>
   <br />
   <button onClick={()=> setCount(2)}>Update Counter1  </button>
   <br />
   <button onClick={()=> setCount(count+1)}>Update Counter2  </button>
 <br />
   <button onClick={()=> setMorning(!isMorning)}> Update Day </button>
+<br />
+<h4>Slow and steady wins the race</h4>
 </div>
 );
 }
