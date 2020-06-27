@@ -6,7 +6,7 @@ export default function App() {
   let [count, setCount] = useState(0);
   let [isMorning, setMorning] = useState(false)
   return (
-  <div className={"box ${isMorning ? 'daylight':'nightview'}" }>
+  <div className={`box ${isMorning ? 'daylight':'nightlight'}`}>
   <h1>Day time = {isMorning ? 'Morning' : 'Night'}</h1>
   <Message counter={count}/>
   <br />
@@ -15,6 +15,8 @@ export default function App() {
   <button onClick={()=> setCount(2)}>Update Counter1  </button>
   <br />
   <button onClick={()=> setCount(count+1)}>Update Counter2  </button>
-  </div>
-  );
+<br />
+  <button onClick={()=> setMorning(!isMorning)}> Update Day </button>
+</div>
+);
 }
